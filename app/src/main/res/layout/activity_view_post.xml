@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewPostActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/postImageImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/black"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/postUserNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Roshan !"
+                        android:textAlignment="textEnd"
+                        android:textSize="16dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/postCaptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Post Title Goes Here..."
+                        android:textSize="16dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/postDescriptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="The Post Description Goes Here..." />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/postLikeTextView"
+                            android:layout_width="100dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"/>
+
+                        <TextView
+                            android:id="@+id/postDislikeTextView"
+                            android:layout_marginStart="6dp"
+                            android:layout_width="100dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"/>
+
+                        <TextView
+                            android:id="@+id/postCommentTextView"
+                            android:layout_marginStart="6dp"
+                            android:layout_width="100dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@android:color/holo_green_light"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/postLikeButton"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/holo_green_light"
+                            android:padding="10dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/white_like"
+                            android:text="@string/like"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light" />
+
+                        <Button
+                            android:id="@+id/postDislikeButton"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:background="@android:color/holo_green_light"
+                            android:padding="10dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/whitedislike"
+                            android:text="@string/dislike"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light" />
+
+                        <Button
+                            android:id="@+id/postCommentButton"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:background="@android:color/holo_green_light"
+                            android:padding="10dp"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/white_comment"
+                            android:text="@string/comment"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/postCommentRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

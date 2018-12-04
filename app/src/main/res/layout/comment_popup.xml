@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/commentBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/popupCommentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/comment" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/commentBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/popupSendButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_green_light"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                tools:text="@string/send" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/popupCancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_green_light"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                tools:text="@string/cancel" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

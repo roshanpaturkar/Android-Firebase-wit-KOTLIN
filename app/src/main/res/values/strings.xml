@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">GHRCE</string>
+    <string name="mainsignupbutton">Sign Up</string>
+    <string name="mainsigninbutton">Sign In</string>
+    <string name="passwordhint">Password</string>
+    <string name="emailhint">Email</string>
+    <string name="loginactivityloginbutton">Login</string>
+    <string name="first_name">First Name</string>
+    <string name="lasst_name">Last Name</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="dob">Birth Date</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="branch">Branch</string>
+    <string name="section">Section</string>
+    <string name="college_id">College ID</string>
+    <string name="register_button">Register</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="forger_password">Forget Password</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="caption">Caption</string>
+    <string name="description">Description</string>
+    <string name="post">Post</string>
+    <string name="issue">Describe Issue</string>
+    <string name="post_issue">Take others advice</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="comment">Comment</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+</resources>
